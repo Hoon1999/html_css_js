@@ -1,0 +1,51 @@
+/*
+스타일을 적용할 html 요소를 가리킬 때,
+html 요소의 이름, id, 클래스를 사용한다.
+
+근데 id 와 클래스는 무슨 차이가 있는 것일까?
+나는 html 문서만 보았기 때문에, id 와 클래스의 쓰임새가 동일 해보였다.
+
+id 는 하나의 html의 여러요소에 중복해서 사용할 경우 js 에서 문제가 생긴다고한다.
+즉 중복사용을 하려면 클래스를  사용해야한다.
+무슨 문제가 생기는지는 안배웠다. js 강의에서 배울듯?
+
+적용하는 방법은 #id명 {} , .클래스명 {}, 요소명{} 이 있다.
+*/
+
+/*
+백그라운드 속성
+백그라운드 속성에는
+background-color(알고있던거)
+background-image(알고있던거)
+이외에
+repeat (이미지 수직/수평 반복 출력)
+position (반복이 해제된 이미지 위치 지정)
+attachment (이미지 위치 고정. 스크롤 해도 이동하지 않음)
+가 있다.
+*/
+
+.img{
+    background-image: url("image.png");
+    background-size:  20%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+}
+#tcolor {
+    color: red;
+}
+.ls {
+    letter-spacing: 10px;
+}
+.ws {
+    word-spacing: 10px;
+}
+.ti {
+    text-indent: 40px;
+}
+.lh {
+    line-height: 2.2;
+}
+.ts {
+    text-shadow: 5px 5px lightgray;
+}
