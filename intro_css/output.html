@@ -19,10 +19,43 @@ body 태그의 color 속성은 bdoy 내부의 text에 적용이 됩니다.
 
 <pre class="ti">여기엔 들여쓰기 30px을 적용했습니다.</pre>
 
-<span class="lh">줄간격을 늘렸습니다.</span> 
+<span class="lh">여기는 줄 간격을 늘렸습니다.</span> 
 
 <span class="ts">그림자를 적용했습니다. </span>
     </pre>
 
+<div style="color:black">
+<pre>
+<span class="ff">글꼴을 변경했습니다.
+font family 에 값을 여러개 주는 이유는 컴퓨터에 저장된 글꼴이 존재하지 않는 경우를 대비하기 위함입니다. 
+예를들어 현재 문장에는 고딕체, Times New Roman, serif 가 적용되어 있습니다. 
+만약 컴퓨터에 고딕체가 존재하지 않는다면 Times New Roman이 적용됩니다. 
+
+그리고 font family에는 generic family라는게 존재합니다. 
+generic family 는 비슷하게 생긴 글꼴을 모아놓은 그룹입니다.
+font family 의 마지막 값은 이러한 generic family를 주는게 좋습니다. 
+
+현재 텍스트의 font-family 는 고딕체, Times New Roman, serif 입니다.
+serif는 generic family 이며, 그 안에는 courier, courier new, georgia, times, times new roman 이 포함되어 있습니다. 
+따라서 컴퓨터에 고딕체, times new roman 이 존재하지 않아도 serif에 속한 courier 를 적용합니다. 
+</span>
+<span class="fs">font style은 italic체 를 적용할 때 사용합니다.</span>
+font variant 속성은 small caps 를 적용할 때 사용합니다.
+<span class="fv">    small caps (작은 대문자)란 소문자를 소문자 사이즈의 대문자로 변환합니다.
+    aA bB cC dD
+</span>
+
+링크는 기본적으로 밑줄이 적용되어 있습니다. 
+이를 제거하기 위해서는 text-decoration 에 none 값을 줍니다. 
+기본 링크 : <a href="#">link</a>
+밑줄 없는 링크 : <a href="#" class="td">link</a>
+
+리스트랑 테이블에 대한 설명은 html 에서 배웠던거랑 동일...
+
+이미지 스프라이트란 웹페이지에 필요한 여러 이미지를 하나로 합쳐 관리하는 것이다. 
+왜냐하면 이미지가 n개면 n번 요청해야하는데, 하나로 붙여버리면 1번만 요청하면 된다. 
+
+</pre>
+</div>
 </body>
 </html>

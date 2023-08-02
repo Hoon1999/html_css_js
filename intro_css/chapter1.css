@@ -49,3 +49,15 @@ attachment (이미지 위치 고정. 스크롤 해도 이동하지 않음)
 .ts {
     text-shadow: 5px 5px lightgray;
 }
+.ff{
+    font-family: 고딕체, "Times New Roman", serif;
+}
+.fs {
+    font-style: italic;
+}
+.fv {
+    font-variant: small-caps;
+}
+.td {
+    text-decoration: none;
+}
