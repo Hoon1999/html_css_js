@@ -56,6 +56,92 @@ font variant 속성은 small caps 를 적용할 때 사용합니다.
 왜냐하면 이미지가 n개면 n번 요청해야하는데, 하나로 붙여버리면 1번만 요청하면 된다. 
 
 </pre>
+
+<pre>
+size 단위에는 퍼센트, em, px, cm, mm, inch 등이 있다.
+<span class="fsp">200%</span>
+<span class="fse">2em</span> 1em == 100%
+<span class="fsx">10px</span>
+
+크기 조절 속성은 height , width 가 있다.
+기본적으로 auto 이다. auto 일 경우 웹 브라우저 크기를 조절하면 같이 변한다. 
+max height 가 500, min height 가 100 으로 설정하면, 
+창을 아무리 키워도 500 보다 커질 수 없고
+창을 아무리 줄여도 100보다 작아질 수 없다. 
+
+<div class="class1">width : 500</div>
+<div class="class2">width : auto, max width : 300</div>
+<div class="class3">width : auto, min width : 600</div>
+
+padding : border 와 content 사이의 여백 
+margin : border 와 이웃 요소 사이의 여백 
+height 와 width 는 content의 사이즈를 조절함. 
+
+<div class="class4">테두리도 위아래옆 각각 설정 가능함.</div> 
+
+<div class="class5">아웃라인이 border와 다른점은 마진에 영향을 안준다는 점이다.</div>
+
+border 는 100px만큼 커지면 margin 도 100px 만큼 이동하는데 
+outline은 margin에 영향을 안준다. 
+
+display 속성은 block 과 inline 을 결정합니다. 
+기본적으로 block인 요소에게 inline 을 적용하면, 가로 너비를 다 차지하는 block 성질을 잃게된다. 
+기본적으로 inline 인 요소에게 block 을 적용해도, block 처럼 다른요소를 포함하는 것은 할 수 없다. 
+
+display 에는 inline, block, inline-block, none 이 있다. 
+inline-block 은 inline 이지만 block 처럼 다른 요소를 포함할 수 있다.
+
+아래는 width: 100, height 50을 적용한 inline 과 inline-block 이다.
+<div class="class6">inline, width 100, height 50 입니다. width 와 height 가 잘 적용이 되었나요?</div>
+<div class="class7">inline-block, width 100, height 50 입니다. width 와 height 가 잘 적용이 되었나요?</div>
+
+요소를 숨기는 방법은 2가지가 있다. 
+display : none
+visibility : hidden
+물론 둘 다 소스코드 내에는 존재하지만 눈에만 안보이게 한다. 
+diplay를 none 으로 하면 layout에 영향을 안준다.
+visibility을 hidden 으로 하면 layout에 영향을 준다. 
+
+<div style="border: 1px solid">레이아웃에도 영향을 안주는 display: none
+<span class="class8">투명한 문장</span></div> 
+<div style="border: 1px solid">투명해지지만 여전히 레이아웃에는 영향을 주는 visibility: hidden
+<span class="class9">투명한 문장</span></div> 
+
+투명도 조절은 opacity 와 filter: alpha(opacity) 를 동시에 사용합니다. 
+<div class="class10"></div> 투명도 40%
+
+position 속성을 통해 요소들의 위치를 정할 수 있습니다. 
+position 에는 
+static 
+relative
+fixed 
+absolute
+4 종류가 있습니다. 
+static 은 태그 순서대로 배치하는 방식입니다. 이를 기본위치라고합니다. top, right, left, bottom 을 무시합니다. 
+relative 는 기본 위치에서 위치를 옮기는 방식입니다. 상하좌우로 밀어서 옮깁니다. 
+fixed 는 viewport 를 기준으로 위치를 설정합니다. background-attachment: fixed 와 동일한 방법입니다. 
+absolute 는 ancester 를 기준으로 위치를 설정합니다. ancester 가 없다면 body 태그를 기준으로 설정합니다. 
+
+<div class="class11">이 문장은 position 이 static입니다.</div>
+<div class="class11"><span class="class12">이 문장은 position이 relative 입니다. </span></div>
+<div class="class11"><span class="class13">이 문장은 position 이 fixed 입니다.</span></div>
+<div class="class11"><div class="class14">이 문장은 position 이 absolute 입니다.</div>얘 왜 조상이 body인거지</div>
+
+요소들이 static이 아닌이상 겹치게 할 수 있습니다. 
+그러면 요소를 위로 띄워줄 우선순위를 정해야 합니다. 
+이를 z-index라고 합니다. 
+z-index 값이 크면 위로 올라옵니다. 작으면 뒤로 내려갑니다. 
+
+float 속성은 여러 요소들이 자연스럽게 어울리도록 합니다. 
+
+<div class="class10 class15"></div>float 가 적용되어 나란히 출력됩니다.
+자연스럽나요?
+
+
+clear 속성은 이러한 float 속성을 무시하는 속성 입니다.
+<div class="class10 class15"></div>
+<p class="class16">여기서 부터는 float 를 무시해요</p>
+</pre>
 </div>
 </body>
 </html>

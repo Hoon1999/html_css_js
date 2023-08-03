@@ -61,3 +61,81 @@ attachment (이미지 위치 고정. 스크롤 해도 이동하지 않음)
 .td {
     text-decoration: none;
 }
+.fsp{
+    font-size: 200%;
+}
+.fse{font-size: 2em;}
+.fsx{font-size: 10px;}
+.class1 {
+    width: 500px;
+    border: 2px solid;
+}
+.class2 {
+    max-width: 300px;
+    border: 2px solid
+}
+.class3 {
+    min-width: 600px;
+    border: 2px solid;
+}
+.class4 {
+    border: 1px solid;
+    border-top-style: dashed;
+    border-top-color: red;
+    border-top-width: 2px;
+    border-left-style: dotted;
+    border-left-width: 4px;
+}
+.class5 {
+    outline: 30px solid red;
+}
+.class6 {
+    display: inline;
+    width: 100px;
+    height:50px;
+    background-color: aqua;
+}
+.class7 {
+    display:inline-block;
+    width: 100px;
+    height:50px;
+    background-color: aqua;
+}
+.class8 {
+    display : none;
+}
+.class9 {
+    visibility: hidden;
+}
+.class10 {
+    display: inline-block;
+    width: 100px ;
+    height: 50px;
+    background-image: url("image.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity:0.4; filter: alpah(opacity= 40);
+}
+.class11 {
+    display: inline-block;
+    width: 400px;
+    height : 300px;
+    border: 1px solid;
+}
+.class12 {
+    position:relative;
+    top: 30px;
+    left: 30px;
+}
+.class13 {
+    position:fixed;
+    left:74%;
+    top:11%;
+}
+.class14 {
+    position:absolute;
+    top: 1px;
+    left: 1px;
+}
+.class15 { float: left; }
+.class16 { clear:both;}
