@@ -3870,9 +3870,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 10px 15px;
 }
 .nav > li > a:hover,
-.nav > li > a:focus {
+.nav > li > a:focus,
+.nav > li > a:link,
+.nav > li > a:visited {
   text-decoration: none;
-  background-color: #eee;
+  color: inherit;
 }
 .nav > li.disabled > a {
   color: #777;
